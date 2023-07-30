@@ -3,6 +3,8 @@ import { useState } from "react";
 import Numbers from "./components/Numbers";
 import Ops from "./components/ops";
 import Inputoutput from "./components/Inputoutput";
+import Display from "./components/extraDivDisplay";
+import extraDiv from "./components/extraDiv";
 
 
 
@@ -69,7 +71,9 @@ const Calculator = () => {
 
 
       </div>
-
+      <div className={"w-56 h-[460px] bg-orange-900 hidden md:block shadow-md shadow-black "}>
+                <Display/>
+            </div>
 
 
     </div>
